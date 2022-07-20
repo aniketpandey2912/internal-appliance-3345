@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <!-- <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* large screen */
+      #top {
+        width: 97.5vw;
+        border: 1px solid red;
+        background-color: #00819d;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 17px;
+      }
+
+      #top a {
+        color: white;
+      }
+
+      #nav {
+        border: 1px solid red;
+        width: 100vw;
+        margin: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        padding: 20px 0px;
+      }
+      /* navbar- first div */
+      #nav > div {
+        /* border: 1px solid black; */
+        width: 98%;
+        margin: auto;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto 2fr auto;
+        grid-template-rows: repeat(1, 1fr);
+        gap: 10%;
+      }
+
+      #nav > div > div {
+        /* border: 1px solid black; */
+        height: 50px;
+      }
+
+      #nav > div > #left {
+        margin-left: 0px;
+      }
+      #nav > div > #left > img {
+        height: 100%;
+        /* width: 100%; */
+      }
+
+      #nav > div > #mid {
+        display: flex;
+        border: 1px solid black;
+        align-items: center;
+      }
+      #nav > div > #mid > img {
+        height: 70%;
+        /* width: 100%; */
+      }
+      #nav > div > #mid > input {
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        border: 0px;
+        outline: none;
+        margin-left: 5px;
+      }
+
+      #nav > div > #right {
+        margin-right: 0px;
+        display: flex;
+        align-items: center;
+      }
+
+      #nav > div > #right > a {
+        padding: 0px 10px;
+      }
+
+      #nav > div > #right > a:nth-child(1) {
+        /* border: 1px solid red; */
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+      }
+
+      #nav > div > #right > a:nth-child(2) > img {
+        height: 50px;
+        /* border: 1px solid red; */
+      }
+
+      /* navbar- second div */
+      #nav > div:nth-child(2) {
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        gap: 1px;
+        align-items: center;
+        margin-top: 15px;
+      }
+
+      #nav > div:nth-child(2) > a {
+        /* border: 1px solid black; */
+        padding: 0px;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        line-height: 25px;
+      }
+
+      #nav > div:nth-child(2) > a:hover {
+        color: black;
+        border-bottom: 1px solid black;
+      }
+
+      #nav > div:nth-child(2) > a:first-child {
+        color: red;
+      }
+
+      #nav > div:nth-child(2) > a:active {
+        color: blue;
+      }
+
+      /* medium size screen */
+      @media all and (min-width: 502px) and (max-width: 768px) {
+        /* navbar- first div */
+        #nav > div {
+          /* border: 1px solid black; */
+          display: grid;
+          grid-template-columns: auto 2fr auto;
+          /* grid-template-rows: repeat(1,1fr); */
+          gap: 2%;
+        }
+
+        #nav > div > #mid > input {
+          height: 100%;
+          width: 100%;
+          font-size: 12px;
+          border: 0px;
+        }
+
+        /* navbar- second div */
+        #nav > div:nth-child(2) {
+          /* border: 1px solid red; */
+          display: grid;
+          grid-template-columns: repeat(7, 1fr);
+        }
+      }
+
+      /* medium size screen */
+      @media all and (min-width: 320px) and (max-width: 500px) {
+        /* navbar- first div */
+        #nav > div {
+          /* border: 1px solid black; */
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 5%;
+          text-align: center;
+        }
+
+        #nav > div > #left {
+          border: 1px solid red;
+          display: block;
+          margin: auto;
+        }
+
+        #nav > div > #mid {
+          width: 95%;
+          margin: auto;
+        }
+
+        #nav > div > #mid > img {
+          margin-top: 8px;
+          height: 40px;
+        }
+
+        #nav > div > #mid > input {
+          height: 100%;
+          width: 80%;
+          font-size: 12px;
+          border: 0px;
+        }
+
+        #nav > div > #right {
+          border: 1px solid red;
+          display: flex;
+          margin:  auto;
+        }
+
+        /* navbar- second div */
+        #nav > div:nth-child(2) {
+          /* border: 1px solid red; */
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(4,1fr);
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <div id="top">
+      <p>
+        Free shipping over $89, or shop online and pick up select orders at a
+        Nordstrom Rack or Nordstrom store. <a href="#">Learn More</a>
+      </p>
+    </div>
+
+    <div id="nav">
+      <div>
+        <div id="left">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE77RG5Pbe0IGYPXR_NRX1z2q5aLmKAOgM_g&usqp=CAU"
+            alt="logo"
+          />
+        </div>
+        <div id="mid">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHG_mlSe0DG88MUouuUWrtOxuZMP5uxLiZnw&usqp=CAU"
+            alt="search-icon"
+          />
+          <input type="text" placeholder="Search for product or brands" />
+        </div>
+        <div id="right">
+          <a href="#">Sign In </a>
+          <a href="#">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGE2cp25huPGPKPX7VK1EpUrLxFBtvtXdFLQ&usqp=CAU"
+              alt="cart"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <a href="#">Clearance</a>
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Shoes</a>
+        <a href="#">Activewear</a>
+        <a href="#">Bags & Accessories</a>
+        <a href="#">Home</a>
+        <a href="#">Beauty</a>
+        <a href="#">Gifts</a>
+        <a href="#">Flash Events</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,2 +1,9 @@
 Individual Project- unit 2
 project name: internal-appliance-3345
+
+Navbar Links:
+logo image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE77RG5Pbe0IGYPXR_NRX1z2q5aLmKAOgM_g&usqp=CAU";
+
+search icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHG_mlSe0DG88MUouuUWrtOxuZMP5uxLiZnw&usqp=CAU";
+
+cart icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHG_mlSe0DG88MUouuUWrtOxuZMP5uxLiZnw&usqp=CAU";
