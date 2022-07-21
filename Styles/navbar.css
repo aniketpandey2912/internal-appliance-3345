@@ -7,7 +7,7 @@
 /* large screen */
 #top {
   width: 97.5vw;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: #00819d;
   color: white;
   text-align: center;
@@ -20,7 +20,7 @@
 }
 
 #nav {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100vw;
   margin: auto;
   height: auto;
