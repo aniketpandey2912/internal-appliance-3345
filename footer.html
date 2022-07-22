@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <style>
+      #banner > img {
+        width: 100%;
+        height: 200px;
+      }
+
+      #banner > p {
+        /* border: 1px solid red; */
+        text-align: center;
+        width: 43%;
+        margin: auto;
+        position: relative;
+        top: -75px;
+        color: white;
+      }
+
+      #banner > p > a {
+        color: white;
+      }
+
+      #email-updates {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+        align-items: center;
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      }
+
+      #email-updates > input {
+        width: 250px;
+        font-size: 20px;
+        padding: 10px 10px;
+        margin-left: 10px;
+      }
+
+      #email-updates > button {
+        font-size: 20px;
+        padding: 10px 100px;
+        margin-left: 5px;
+        color: white;
+        background-color: #00819d;
+        border-color: #00819d;
+      }
+
+      @media all and (max-width: 1492px) {
+        #email-updates {
+          flex-direction: column;
+        }
+
+        #email-updates > p {
+          margin-bottom: 30px;
+        }
+
+        #email-updates > input {
+          width: 100%;
+          font-size: 20px;
+          padding: 10px 0px;
+          margin-left: 0px;
+          margin-bottom: 30px;
+        }
+
+        #email-updates > button {
+          width: 100%;
+          margin-left: 0px;
+        }
+      }
+
+      /* last foot */
+      #foot {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+        gap: 2%;
+      }
+
+      #foot > #left-foot {
+        /* border: 1px solid black; */
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2%;
+      }
+
+      #foot > #left-foot > div {
+        /* border: 1px solid black; */
+        height: auto;
+      }
+
+      #foot > #left-foot > div > h3 {
+        margin: 2px;
+      }
+
+      #foot > #left-foot > div > ul {
+        display: inline;
+      }
+
+      #foot > #left-foot > div > ul > li {
+        list-style: none;
+        /* border: 1px solid red; */
+        margin-top: 0px;
+        margin-bottom: 15px;
+      }
+
+      #foot > #left-foot > div > ul > li > a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      #foot > #left-foot > div > ul > li > a:hover {
+        color: #00819d;
+        border-bottom: 1px solid #00819d;
+      }
+
+      #foot > #right-foot {
+        /* border: 1px solid black; */
+        height: 150px;
+      }
+
+      #foot > #right-foot > div:first-child {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+      }
+
+      #foot > #right-foot > div:first-child > img {
+        width: 7%;
+        margin-right: 10px;
+      }
+
+      #foot > #right-foot > div:first-child > a {
+        font-size: 18px;
+      }
+
+      #foot > #right-foot > div:first-child > a:hover {
+        color: #00819d;
+        cursor: pointer;
+        border-bottom: 2px solid #00819d;
+      }
+
+      #foot > #right-foot > div:first-child > button {
+        margin-left: 45%;
+        width: 70px;
+        border: none;
+      }
+
+      #foot > #right-foot > div:last-child {
+        margin-top: 30px;
+        /* border: 1px solid black; */
+      }
+
+      #foot > #right-foot > div:last-child > ul {
+        list-style: none;
+      }
+
+      #foot > #right-foot > div:last-child > ul > li {
+        /* border: 1px solid red; */
+        display: inline-block;
+        margin-right: 15px;
+      }
+
+      #foot > #right-foot > div:last-child > ul > li img {
+        width: 30px;
+      }
+
+      #last-line{
+        border: 1px solid red;
+        margin-top: 10px;
+      }
+
+      #last-line > a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+      }
+
+      #last-line > a:hover {
+        color: #00819d;
+        border-bottom: 1px solid #00819d;
+      }
+
+
+      #last-line > p {
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      /* medium screen */
+      @media all and (min-width: 481px) and (max-width: 768px) {
+        #banner > img {
+        width: 100%;
+        height: 70px
+        }
+
+        #banner > p {
+        border: 1px solid red;
+        text-align: center;
+        font-size: 11px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        top: -30px;
+        color: white;
+        }
+
+        #foot > #left-foot {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        #foot > #right-foot > div:first-child > button {
+          margin-left: 35%;
+        }
+
+        #foot > #right-foot > div:last-child > ul > li {
+          margin-right: 20px;
+          margin-bottom: 10px;
+        }
+      }
+
+      /* small screen */
+      @media all and (min-width: 320px) and (max-width: 480px) {
+
+        #banner > img {
+        width: 100%;
+        height: 60px
+        }
+
+      #banner > p {
+        border: 1px solid red;
+        text-align: center;
+        font-size: 11px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        top: -30px;
+        color: white;
+      }
+
+        #foot {
+          grid-template-columns: repeat(1,1fr);
+          /* grid-template-rows: repeat(2,1fr); */
+          gap: 1%;
+        }
+
+
+        #foot > #left-foot {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+      }
+
+        #foot > #right-foot > div:first-child > button {
+          margin-left: 45%;
+        }
+
+        #foot > #right-foot > div:last-child > ul > li {
+          margin-right: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <img
+        src="https://n.nordstrommedia.com/id/e63e8dd7-3537-47db-912c-7d370e63658f.jpeg?h=180&w=1600"
+        alt="Get Exclusive Offer"
+      />
+      <p>
+        Sign up and be first to know about flash events, new markdowns, private
+        sales and more. <a href="#">Sign Up</a>
+      </p>
+    </div>
+
+    <div id="email-updates">
+      <p>Get E-mail Updates:</p>
+      <input type="email" placeholder="E-mail Address" />
+      <button>SIGN UP</button>
+    </div>
+
+    <div id="foot">
+      <div id="left-foot">
+        <div>
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Guest Returns</a></li>
+            <li><a href="#">Shipping & Return Policy</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">About Our Brand</a></li>
+            <li><a href="#">The Nordy Club</a></li>
+            <li><a href="#">Store Locator</a></li>
+            <li><a href="#">All Brands</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Get Email Updates</a></li>
+            <li><a href="#">Nordstrom Blog</a></li>
+            <li><a href="#">Nordy Podcast</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Nordstrom Rack & The Community</h3>
+          <ul>
+            <li><a href="#">Corporate Social Responsibility</a></li>
+            <li><a href="#">Diversity, Inclusion & Belonging</a></li>
+            <li><a href="#">Big Brothers Big Sisters</a></li>
+            <li><a href="#">Donate Clothes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Nordstrom Card</h3>
+          <ul>
+            <li><a href="#">Apply for a Nordstrom Card</a></li>
+            <li><a href="#">Pay My Bill</a></li>
+            <li><a href="#">Manage my Nordstrom Card</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Nordstrom, Inc.</h3>
+          <ul>
+            <li><a href="#">Nordstrom</a></li>
+            <li><a href="#">Nordstrom Canada</a></li>
+            <li><a href="#">HauteLook</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Press Releases</a></li>
+            <li><a href="#">Nordstrom Media and Network</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="right-foot">
+        <div>
+          <img
+            src="https://previews.123rf.com/images/martialred/martialred1804/martialred180400012/99946594-portable-devices-with-tablet-and-mobile-phone-vector-icon-for-apps-and-websites.jpg"
+            alt="download my app"
+          />
+          <a>Download Our Apps</a>
+
+          <button>
+            <span class="material-symbols-outlined"> expand_less </span
+            ><br />Top
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/665/premium/665209.png?token=exp=1658470973~hmac=1d2f3de363e49abb21aa716da38aa016"
+                  alt="facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/665/premium/665228.png?token=exp=1658472233~hmac=f0e23c052cb983a362c969c8fb4fd64e"
+                  alt="twitter"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/665/premium/665213.png?token=exp=1658472354~hmac=e08111b4c098f7318b3de6232c7b4879"
+                  alt="pinterest"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/1362/1362857.png"
+                  alt="instagram"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div id="last-line">
+    <a href="#">Privacy</a>
+    <a href="#">Do Not Sell My Personal Information</a>
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Internet Based Ads</a>
+    <a href="#">California Supply Chain Act</a>
+    <p>©2022 Nordstrom Rack</p> 
+  </div>
+</html>
