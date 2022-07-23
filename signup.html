@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="./Styles/signup.css" />
+  </head>
+  <body>
+    <div id="signup">
+      <h3>Sign In | Create Account</h3>
+      <p>Enter your email to get started.</p>
+      <div>
+        <form id="check-account">
+          <p>Email.</p>
+          <input type="email" id="email" />
+          <p>
+            By tapping Next, you agree to our <a href="#">Privacy Policy</a> and
+            <a href="#">Terms & Conditions.</a>
+          </p>
+          <input type="submit" id="submit" value="Next" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+
+    let emailArr = JSON.parse(localStorage.getItem("emails")) || [];
+
+  let form = document.querySelector("form");
+  form.addEventListener("submit",function(event){
+    event.preventDefault();
+    let obj = {
+      email: form.email.value
+    }
+
+    let isPresent = checkEmailPresent(emailArr,obj); // checking if email is already signed up or not
+
+    if (isPresent){
+      // console.log("Present");
+      window.location.href = "signin.html";
+      return;
+    } else {
+      // console.log("absent")
+      emailArr.push(obj);
+      // console.log(emailArr);
+
+      localStorage.setItem("emails",JSON.stringify(emailArr));
+
+      window.location.href = "create_account.html";
+    }
+
+
+  });
+
+  function checkEmailPresent(array,obj){
+    if(array.length==0){
+        return false;
+    }
+    else {
+      for (let i=0; i<=array.length-1; i++){
+      if (array[i].email==obj.email){
+        // console.log("found");
+        return true;
+      } else {
+        // console.log("Not Found")
+        return false;
+      }
+    }
+    }
+
+
+  }
+</script>

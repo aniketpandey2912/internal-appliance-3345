@@ -41,7 +41,7 @@
           <input type="text" placeholder="Search for product or brands" />
         </div>
         <div id="right">
-          <a href="#">Sign In </a>
+          <a href="signup.html" id = "signinBtn">Sign In </a>
           <a href="#">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGE2cp25huPGPKPX7VK1EpUrLxFBtvtXdFLQ&usqp=CAU"
@@ -67,3 +67,20 @@
     </div>
   </body>
 </html>
+
+
+<script>
+
+let signinBtn = document.getElementById("signinBtn");
+
+let signedinAccount = JSON.parse(localStorage.getItem("signedinAccount")) || { First_name: "Sign",
+  Last_name: "In"};
+
+  signinBtn.innerText = "";
+  signinBtn.innerText = signedinAccount.First_name + " " + signedinAccount.Last_name;
+  signinBtn.append(signinBtn);
+
+
+
+
+</script>

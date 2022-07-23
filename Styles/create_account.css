@@ -1,0 +1,90 @@
+/* signin page css */
+* {
+  /* margin: 0;
+    padding: 0; */
+  font-family: Brandon Text, Arial, sans-serif;
+}
+#create {
+  /* border: 1px solid red; */
+  width: 35%;
+  margin: 150px auto;
+  padding: 20px 20px 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#create > #logos > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#create > #details > #check-account > p:nth-child(1) {
+  font-weight: bold;
+}
+
+#create > #details > #check-account a {
+  color: #00819d;
+}
+/* 
+  #create > #details > #check-account > div {
+    border: 1px solid red;
+  } */
+
+  #create > #details > #check-account > div > #firstname {
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+  }
+  #create > #details > #check-account > div > #lastname {
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+  }
+
+#create > #details > #check-account > div > #password {
+  width: 100%;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+#create > #details > #check-account > div:nth-child(2) > a {
+  /* border: 1px solid black; */
+  position: relative;
+  top: -30px;
+  left: 90%;
+}
+
+#create > #details > #check-account > div:nth-child(3) > a {
+  /* border: 1px solid black; */
+  position: relative;
+  top: -47px;
+  left: 83%;
+}
+
+#create > #details > #check-account > #submit {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #00819d;
+  color: white;
+  border: none;
+}
+
+#create > #details > #check-account > div > strong {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* medium screen */
+@media all and (min-width: 481px) and (max-width: 768px) {
+  #create {
+    width: 60%;
+  }
+}
+
+/* small screen */
+@media all and (min-width: 320px) and (max-width: 480px) {
+  #create {
+    width: 70%;
+  }
+}
