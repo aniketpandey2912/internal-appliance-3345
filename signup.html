@@ -51,7 +51,7 @@
 
       localStorage.setItem("emails",JSON.stringify(emailArr));
 
-      window.location.href = "create_account.html";
+      window.location.href = "create_account.html"
     }
 
 
@@ -66,11 +66,14 @@
       if (array[i].email==obj.email){
         // console.log("found");
         return true;
-      } else {
+      } 
+      // else {
+      //   // console.log("Not Found")
+      //   return false;
+      // }
+    }
         // console.log("Not Found")
         return false;
-      }
-    }
     }
 
 
