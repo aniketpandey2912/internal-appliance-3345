@@ -43,7 +43,8 @@
         <form id="check-account">
           <p>Email.</p>
           <div>
-            <p>aniketpandey@gmail.com</p>
+            <!-- email visible -->
+            <p id="visible-email"></p> 
             <a href="#">Edit</a>
           </div>
 
@@ -72,8 +73,26 @@
 
 <script>
 
+  
+  
+  // *****************
+  let visibleEmail = document.querySelector("#visible-email");
 
-let createdArr = JSON.parse(localStorage.getItem("createdAccounts")) || [];
+  let emails = JSON.parse(localStorage.getItem("emails"));
+  // console.log(emails,"got it")
+
+  visibleEmail.innerText = null;
+  for (let i=0; i<=emails.length-1; i++){
+    if (i==emails.length-1){
+      visibleEmail.innerText = emails[emails.length-1].email;
+      break;
+    }
+  }
+  // ****************
+
+
+  let createdArr = JSON.parse(localStorage.getItem("createdAccounts")) || [];
+
 
 let form = document.querySelector("form");
 form.addEventListener("submit", function(event){
